@@ -12,7 +12,7 @@ import javax.swing.table.DefaultTableModel;
 public class homePage extends javax.swing.JFrame {
 
     private String username;
-    private String path = "YOU_PATH//room.txt";
+    private String path = "PATH\\room.txt"; //room.txt
     public homePage(){
         initComponents();
         jTable1.setRowHeight(40);

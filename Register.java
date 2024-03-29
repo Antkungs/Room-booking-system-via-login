@@ -1,7 +1,6 @@
 package javabook;
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -11,7 +10,7 @@ import javax.swing.JOptionPane;
 
 public class Register extends javax.swing.JFrame {
 
-    private String path = "C:\\Users\\thamr\\OneDrive\\Documents\\NetBeansProjects\\javaBook\\src\\javabook\\data.txt";
+    private final String path = "PATH\\data.txt"; //data.txt
     public Register() {
         initComponents();
     }
@@ -178,7 +177,7 @@ private void saveToTxtFile() throws IOException {
             reader.close();
 
             // เพิ่มข้อมูลใหม่ลงในไฟล์ txt
-            FileWriter writer = new FileWriter("path"); // ใช้โหมด append
+            FileWriter writer = new FileWriter(path); // ใช้โหมด append
             writer.write(fileContent.toString());
             writer.write(username + "," + password + "\n");
             writer.close();

@@ -7,7 +7,7 @@ import javax.swing.JOptionPane;
 
 public class Login extends javax.swing.JFrame {
 
-    private String path = "YOU_PATH\\data.txt";
+    private final String path = "PATH\\data.txt"; //data.txt
     
     public Login() {
         initComponents();
